@@ -1,8 +1,6 @@
-body {
-  display: flex;
-}
 .sidebar {
   background: #343a40;
+  display: flex;
   color: white;
 }
 .sidebar .nav-link {
