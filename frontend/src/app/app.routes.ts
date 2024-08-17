@@ -3,6 +3,8 @@ import { ContentComponent } from './content/content.component';
 import { GestionAdminComponent } from './gestion-admin/gestion-admin.component';
 import {AdminTicketComponent} from './admin-ticket/admin-ticket.component';
 import { DatoSoporteComponent } from './dato-soporte/dato-soporte.component';
+import { VerTicketsComponent } from './ver-tickets/ver-tickets.component';
+
 export const routes: Routes = [
   { path: 'gestion_admin', component: GestionAdminComponent },
   { path: 'option1', component: ContentComponent, data: { content: 'Content for Option 1' }},
@@ -10,5 +12,6 @@ export const routes: Routes = [
   { path: 'option3', component: ContentComponent, data: { content: 'Content for Option 3' }},
   { path: 'Tickets', component: AdminTicketComponent },
   { path: 'sopor_dato', component: DatoSoporteComponent },
+  { path: 'ver-tickets', component: VerTicketsComponent },
   { path: '', redirectTo: '/option1', pathMatch: 'full' }
 ];
