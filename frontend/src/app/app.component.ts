@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import {MenuSoporteComponent} from './menu-soporte/menu-soporte.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
