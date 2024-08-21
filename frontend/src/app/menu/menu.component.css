@@ -1,0 +1,21 @@
+.sidebar {
+  background: #343a40;
+  display: flex;
+  color: white;
+}
+.sidebar .nav-link {
+  color: white;
+}
+.sidebar .nav-link:hover {
+  background-color: #495057;
+}
+.sidebar .dropdown-menu {
+  background-color: #343a40;
+  border: none;
+}
+.sidebar .dropdown-item {
+  color: white;
+}
+.sidebar .dropdown-item:hover {
+  background-color: #495057;
+}
