@@ -4,6 +4,9 @@ import { GestionAdminComponent } from './gestion-admin/gestion-admin.component';
 import {AdminTicketComponent} from './admin-ticket/admin-ticket.component';
 import { DatoSoporteComponent } from './dato-soporte/dato-soporte.component';
 import { VerTicketsComponent } from './ver-tickets/ver-tickets.component';
+import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
 
 export const routes: Routes = [
   { path: 'gestion_admin', component: GestionAdminComponent },
@@ -13,5 +16,8 @@ export const routes: Routes = [
   { path: 'Tickets', component: AdminTicketComponent },
   { path: 'sopor_dato', component: DatoSoporteComponent },
   { path: 'ver-tickets', component: VerTicketsComponent },
+  { path: 'usuarios', component: UserListComponent },
+  { path: 'usuarios/nuevo', component: UserFormComponent },
+  { path: 'usuarios/:id', component: UserDetailComponent },
   { path: '', redirectTo: '/option1', pathMatch: 'full' }
 ];
