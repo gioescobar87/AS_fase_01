@@ -7,10 +7,11 @@ import { VerTicketsComponent } from './ver-tickets/ver-tickets.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
+import { RolesComponent } from './roles/roles.component';
 
 export const routes: Routes = [
   { path: 'gestion_admin', component: GestionAdminComponent },
-  { path: 'option1', component: ContentComponent, data: { content: 'Content for Option 1' }},
+  { path: 'gestion_roles', component: RolesComponent },
   { path: 'option3', component: ContentComponent, data: { content: 'Content for Option 3' }},
   { path: 'option3', component: ContentComponent, data: { content: 'Content for Option 3' }},
   { path: 'Tickets', component: AdminTicketComponent },
