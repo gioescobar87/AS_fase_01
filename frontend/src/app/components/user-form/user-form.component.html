@@ -1,0 +1,14 @@
+<form [formGroup]="usuarioForm" (ngSubmit)="guardarUsuario()">
+  <div>
+    <label for="nombre">Nombre</label>
+    <input id="nombre" formControlName="nombre" type="text" required />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input id="email" formControlName="email" type="email" required />
+  </div>
+  <!-- Agrega más campos si es necesario -->
+  <button type="submit" [disabled]="usuarioForm.invalid">
+    {{ usuarioId ? 'Actualizar Usuario' : 'Crear Usuario' }}
+  </button>
+</form>
