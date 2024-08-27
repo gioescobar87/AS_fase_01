@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="header">
+    <h2>Detalles del Ticket</h2>
+  </div>
+
+  <div class="ticket" *ngIf="ticket">
+    <table>
+      <tr *ngFor="let entry of ticket | keyvalue">
+        <td class="key"><strong>{{ entry.key }}:</strong></td>
+        <td class="value">{{ entry.value }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div *ngIf="!ticket" class="loading">
+    <p>Cargando datos del ticket...</p>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .ticket table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .ticket table tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .ticket table tr:last-child {
+    border-bottom: none;
+  }
+  
+  .ticket table td {
+    padding: 12px 10px;
+  }
+  
+  .ticket .key {
+    width: 30%;
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .ticket .value {
+    width: 70%;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  

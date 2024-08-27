@@ -9,9 +9,9 @@
         <form (ngSubmit)="iniciarSesion()" id="formUsuario">
           <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
-            <input  id="campo_usario" class="form-control form-control-lg" type="text" [(ngModel)]="persona.usuario" [ngModelOptions]="{standalone:true}"
+            <input  id="campoUsario" class="form-control form-control-lg" type="text" [(ngModel)]="persona.usuario" [ngModelOptions]="{standalone:true}"
         required />
-            <label class="form-label" for="campo_usario">Usuario</label>
+            <label class="form-label" for="campoUsario">Usuario</label>
           </div>
 
           <!-- Password input -->
@@ -41,3 +41,5 @@
     </div>
   </div>
 </section>
+
+

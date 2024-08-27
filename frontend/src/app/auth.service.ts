@@ -34,7 +34,7 @@ export class AuthService {
     if (this.isBrowser()) {
       localStorage.removeItem('token');
       clearTimeout(this.inactivityTimer);
-      this.router.navigate(['/login']);  // Redirigir al login después de cerrar sesión
+      this.router.navigate(['/Login']);  // Redirigir al login después de cerrar sesión
     }
   }
 
