@@ -1,0 +1,15 @@
+<div *ngIf="usuario">
+  <h2>Detalles del Usuario</h2>
+  <p><strong>ID Usuario:</strong> {{ usuario.idUsuario }}</p>
+  <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
+  <p><strong>Apellido:</strong> {{ usuario.apellido }}</p>
+  <p><strong>Fecha de Nacimiento:</strong> {{ usuario.fechaNacimiento | date:'dd/MM/yyyy' }}</p>
+  <p><strong>Email:</strong> {{ usuario.correoElectronico }}</p>
+  <p><strong>Teléfono Móvil:</strong> {{ usuario.telefonoMovil }}</p>
+  <p><strong>Última Fecha de Ingreso:</strong> {{ usuario.ultimaFechaIngreso | date:'dd/MM/yyyy' }}</p>
+  <p><strong>ID Género:</strong> {{ usuario.idGenero }}</p>
+  <p><strong>ID Sucursal:</strong> {{ usuario.idSucursal }}</p>
+  <p><strong>ID Status Usuario:</strong> {{ usuario.idStatusUsuario }}</p>
+  <p><strong>Fecha de Creación:</strong> {{ usuario.fechaCreacion | date:'dd/MM/yyyy' }}</p>
+  <p><strong>Usuario Creación:</strong> {{ usuario.usuarioCreacion }}</p>
+</div>

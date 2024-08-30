@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TicketService } from './ticket.service'; // Importa tu servicio aquí
+import { UserService } from './user.service';
+import { UserFormComponent } from './components/user-form/user-form.component';
+
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
@@ -11,7 +14,8 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
   ],
   imports: [
     BrowserModule,
-    HttpClientModule // Importa HttpClientModule aquí
+    HttpClientModule,
+   // ReactiveFormsModule // Asegúrate de que ReactiveFormsModule está aquí
   ],
   providers: [
     TicketService,
